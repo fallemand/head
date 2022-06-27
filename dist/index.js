@@ -126,6 +126,7 @@ var acceptFields = [
   "base",
   "style",
   "script",
+  "noscript",
   "htmlAttrs",
   "bodyAttrs"
 ];
@@ -375,7 +376,8 @@ var vnodesToHeadObj = (nodes) => {
     meta: [],
     link: [],
     style: [],
-    script: []
+    script: [],
+    noscript: []
   };
   for (const node of nodes) {
     if (typeof node.type === "symbol" && Array.isArray(node.children)) {

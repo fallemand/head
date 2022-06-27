@@ -30,6 +30,7 @@ export type HeadObject = {
   base?: MaybeRef<HeadAttrs>
   style?: MaybeRef<HeadAttrs[]>
   script?: MaybeRef<HeadAttrs[]>
+  noscript?: MaybeRef<HeadAttrs[]>
   htmlAttrs?: MaybeRef<HeadAttrs>
   bodyAttrs?: MaybeRef<HeadAttrs>
 }
