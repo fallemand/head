@@ -103,6 +103,7 @@ const acceptFields: Array<keyof HeadObject> = [
   'base',
   'style',
   'script',
+  'noscript',
   'htmlAttrs',
   'bodyAttrs',
 ]
@@ -421,6 +422,7 @@ const vnodesToHeadObj = (nodes: VNode[]) => {
     link: [],
     style: [],
     script: [],
+    noscript: []
   }
 
   for (const node of nodes) {
